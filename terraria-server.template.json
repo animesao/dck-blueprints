@@ -1,0 +1,14 @@
+{
+  "name": "terraria-server",
+  "category": "games",
+  "description": "Terraria dedicated server with persistent world",
+  "image": "beardedio/terraria",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"WORLD_SIZE\",\"value\":\"3\"},{\"key\":\"MAX_PLAYERS\",\"value\":\"8\"},{\"key\":\"DIFFICULTY\",\"value\":\"0\"},{\"key\":\"AUTOCREATE\",\"value\":\"1\"}]",
+  "ports": "7777:7777/tcp,7777:7777/udp",
+  "volumes": "terraria_data:/world",
+  "memory": "1g",
+  "cpus": "1.0",
+  "restart": "always"
+}

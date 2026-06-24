@@ -1,0 +1,14 @@
+{
+  "name": "uptime-kuma",
+  "category": "monitoring",
+  "description": "Uptime Kuma — self-hosted website monitoring tool",
+  "image": "louislam/uptime-kuma",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"UPTIME_KUMA_PORT\",\"value\":\"3001\"},{\"key\":\"UPTIME_KUMA_HOST\",\"value\":\"0.0.0.0\"}]",
+  "ports": "3001:3001/tcp",
+  "volumes": "uptime_kuma_data:/app/data",
+  "memory": "256m",
+  "cpus": "0.5",
+  "restart": "always"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "mongodb-7",
+  "category": "databases",
+  "description": "MongoDB 7 with persistent storage",
+  "image": "mongo",
+  "tag": "7",
+  "command": "",
+  "env": "[{\"key\":\"MONGO_INITDB_ROOT_USERNAME\",\"value\":\"admin\"},{\"key\":\"MONGO_INITDB_ROOT_PASSWORD\",\"value\":\"root123\"}]",
+  "ports": "27017:27017/tcp",
+  "volumes": "mongo_data:/data/db",
+  "memory": "1g",
+  "cpus": "1.0",
+  "restart": "always"
+}

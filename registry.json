@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "description": "dck blueprint registry — ready-to-deploy container templates",
+  "base_url": "https://raw.githubusercontent.com/animesao/dck-blueprints/main",
+  "blueprints": {
+    "adguard-home": {
+      "name": "adguard-home",
+      "category": "network",
+      "description": "AdGuard Home — network-wide DNS filtering for ads and trackers",
+      "image": "adguard/adguardhome:latest",
+      "file": "adguard-home.template.json"
+    },
+    "caddy": {
+      "name": "caddy",
+      "category": "web",
+      "description": "Caddy web server with auto-HTTPS",
+      "image": "caddy:alpine",
+      "file": "caddy.template.json"
+    },
+    "clickhouse": {
+      "name": "clickhouse",
+      "category": "databases",
+      "description": "ClickHouse — column-oriented analytics database",
+      "image": "clickhouse/clickhouse-server:latest",
+      "file": "clickhouse.template.json"
+    },
+    "couchdb": {
+      "name": "couchdb",
+      "category": "databases",
+      "description": "CouchDB 3 with persistent JSON document storage",
+      "image": "couchdb:3",
+      "file": "couchdb.template.json"
+    },
+    "cs2-server": {
+      "name": "cs2-server",
+      "category": "games",
+      "description": "Counter-Strike 2 dedicated server via SteamCMD",
+      "image": "cm2network/csgo:latest",
+      "file": "cs2-server.template.json"
+    },
+    "filebrowser": {
+      "name": "filebrowser",
+      "category": "web",
+      "description": "FileBrowser — web-based file manager with authentication",
+      "image": "filebrowser/filebrowser:latest",
+      "file": "filebrowser.template.json"
+    },
+    "ghost": {
+      "name": "ghost",
+      "category": "web",
+      "description": "Ghost blogging platform with persistent content",
+      "image": "ghost:latest",
+      "file": "ghost.template.json"
+    },
+    "grafana": {
+      "name": "grafana",
+      "category": "monitoring",
+      "description": "Grafana — dashboards and observability platform",
+      "image": "grafana/grafana:latest",
+      "file": "grafana.template.json"
+    },
+    "jellyfin": {
+      "name": "jellyfin",
+      "category": "media",
+      "description": "Jellyfin — free and open-source media streaming server",
+      "image": "jellyfin/jellyfin:latest",
+      "file": "jellyfin.template.json"
+    },
+    "mariadb-11": {
+      "name": "mariadb-11",
+      "category": "databases",
+      "description": "MariaDB 11 with persistent storage",
+      "image": "mariadb:11",
+      "file": "mariadb-11.template.json"
+    },
+    "minecraft-server": {
+      "name": "minecraft-server",
+      "category": "games",
+      "description": "Minecraft Java Edition server with persistent world",
+      "image": "itzg/minecraft-server:latest",
+      "file": "minecraft-server.template.json"
+    },
+    "mongodb-7": {
+      "name": "mongodb-7",
+      "category": "databases",
+      "description": "MongoDB 7 with persistent storage",
+      "image": "mongo:7",
+      "file": "mongodb-7.template.json"
+    },
+    "mysql-8": {
+      "name": "mysql-8",
+      "category": "databases",
+      "description": "MySQL 8 with persistent storage",
+      "image": "mysql:8",
+      "file": "mysql.template.json"
+    },
+    "nextcloud": {
+      "name": "nextcloud",
+      "category": "storage",
+      "description": "Nextcloud — self-hosted cloud storage and collaboration platform",
+      "image": "nextcloud:latest",
+      "file": "nextcloud.template.json"
+    },
+    "nginx": {
+      "name": "nginx",
+      "category": "web",
+      "description": "Nginx web server with custom config and static files",
+      "image": "nginx:alpine",
+      "file": "nginx.template.json"
+    },
+    "node-app": {
+      "name": "node-app",
+      "category": "web",
+      "description": "Node.js application with persistent code directory",
+      "image": "node:22-alpine",
+      "file": "node-app.template.json"
+    },
+    "palworld-server": {
+      "name": "palworld-server",
+      "category": "games",
+      "description": "Palworld dedicated server with persistent save",
+      "image": "thijsvanloef/palworld-server-docker:latest",
+      "file": "palworld-server.template.json"
+    },
+    "postgres-16": {
+      "name": "postgres-16",
+      "category": "databases",
+      "description": "PostgreSQL 16 with persistent storage",
+      "image": "postgres:16",
+      "file": "postgres-16.template.json"
+    },
+    "redis-7": {
+      "name": "redis-7",
+      "category": "databases",
+      "description": "Redis 7 in-memory cache with persistence",
+      "image": "redis:7-alpine",
+      "file": "redis-7.template.json"
+    },
+    "rust-server": {
+      "name": "rust-server",
+      "category": "games",
+      "description": "Rust dedicated server via SteamCMD with persistent data",
+      "image": "didstopia/rust-server:latest",
+      "file": "rust-server.template.json"
+    },
+    "satisfactory-server": {
+      "name": "satisfactory-server",
+      "category": "games",
+      "description": "Satisfactory dedicated server with persistent save files",
+      "image": "wolveix/satisfactory-server:latest",
+      "file": "satisfactory-server.template.json"
+    },
+    "teamspeak-3": {
+      "name": "teamspeak-3",
+      "category": "voice",
+      "description": "TeamSpeak 3 voice server with persistent data",
+      "image": "teamspeak:latest",
+      "file": "teamspeak-3.template.json"
+    },
+    "terraria-server": {
+      "name": "terraria-server",
+      "category": "games",
+      "description": "Terraria dedicated server with persistent world",
+      "image": "beardedio/terraria:latest",
+      "file": "terraria-server.template.json"
+    },
+    "uptime-kuma": {
+      "name": "uptime-kuma",
+      "category": "monitoring",
+      "description": "Uptime Kuma — self-hosted website monitoring tool",
+      "image": "louislam/uptime-kuma:latest",
+      "file": "uptime-kuma.template.json"
+    },
+    "valheim-server": {
+      "name": "valheim-server",
+      "category": "games",
+      "description": "Valheim dedicated server with persistent world",
+      "image": "lloesche/valheim-server:latest",
+      "file": "valheim-server.template.json"
+    },
+    "wireguard": {
+      "name": "wireguard",
+      "category": "network",
+      "description": "WireGuard VPN server with web admin interface",
+      "image": "weejewel/wg-easy:latest",
+      "file": "wireguard.template.json"
+    },
+    "wordpress": {
+      "name": "wordpress",
+      "category": "web",
+      "description": "WordPress with persistent content and plugin data",
+      "image": "wordpress:latest",
+      "file": "wordpress.template.json"
+    }
+  }
+}

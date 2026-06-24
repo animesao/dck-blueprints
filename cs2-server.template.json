@@ -1,0 +1,14 @@
+{
+  "name": "cs2-server",
+  "category": "games",
+  "description": "Counter-Strike 2 dedicated server via SteamCMD",
+  "image": "cm2network/csgo",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"SRCDS_TOKEN\",\"value\":\"YOUR_TOKEN_HERE\"},{\"key\":\"SRCDS_HOSTNAME\",\"value\":\"dck CS2 Server\"},{\"key\":\"SRCDS_PORT\",\"value\":\"27015\"},{\"key\":\"SRCDS_MAPGROUP\",\"value\":\"mg_active\"},{\"key\":\"SRCDS_MAP\",\"value\":\"de_dust2\"},{\"key\":\"SRCDS_MAXPLAYERS\",\"value\":\"16\"}]",
+  "ports": "27015:27015/tcp,27015:27015/udp",
+  "volumes": "cs2_data:/home/steam/cs2-dedicated",
+  "memory": "2g",
+  "cpus": "2.0",
+  "restart": "always"
+}

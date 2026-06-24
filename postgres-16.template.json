@@ -1,0 +1,14 @@
+{
+  "name": "postgres-16",
+  "category": "databases",
+  "description": "PostgreSQL 16 with persistent storage",
+  "image": "postgres",
+  "tag": "16",
+  "command": "",
+  "env": "[{\"key\":\"POSTGRES_PASSWORD\",\"value\":\"root123\"},{\"key\":\"POSTGRES_USER\",\"value\":\"admin\"},{\"key\":\"POSTGRES_DB\",\"value\":\"myapp\"}]",
+  "ports": "5432:5432/tcp",
+  "volumes": "postgres_data:/var/lib/postgresql/data",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}

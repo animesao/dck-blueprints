@@ -1,0 +1,14 @@
+{
+  "name": "couchdb",
+  "category": "databases",
+  "description": "CouchDB 3 with persistent JSON document storage",
+  "image": "couchdb",
+  "tag": "3",
+  "command": "",
+  "env": "[{\"key\":\"COUCHDB_USER\",\"value\":\"admin\"},{\"key\":\"COUCHDB_PASSWORD\",\"value\":\"root123\"}]",
+  "ports": "5984:5984/tcp",
+  "volumes": "couchdb_data:/opt/couchdb/data",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}

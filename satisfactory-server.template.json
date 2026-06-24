@@ -1,0 +1,14 @@
+{
+  "name": "satisfactory-server",
+  "category": "games",
+  "description": "Satisfactory dedicated server with persistent save files",
+  "image": "wolveix/satisfactory-server",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"MAXPLAYERS\",\"value\":\"4\"},{\"key\":\"TIMEOUT\",\"value\":\"600\"},{\"key\":\"SKIPUPDATE\",\"value\":\"false\"}]",
+  "ports": "7777:7777/udp,15000:15000/udp",
+  "volumes": "satisfactory_data:/config",
+  "memory": "4g",
+  "cpus": "2.0",
+  "restart": "always"
+}

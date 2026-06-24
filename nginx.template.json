@@ -1,0 +1,14 @@
+{
+  "name": "nginx",
+  "category": "web",
+  "description": "Nginx web server with custom config and static files",
+  "image": "nginx",
+  "tag": "alpine",
+  "command": "",
+  "env": "[]",
+  "ports": "8080:80/tcp,4433:443/tcp",
+  "volumes": "nginx_html:/usr/share/nginx/html,nginx_conf:/etc/nginx/conf.d",
+  "memory": "128m",
+  "cpus": "0.5",
+  "restart": "always"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "valheim-server",
+  "category": "games",
+  "description": "Valheim dedicated server with persistent world",
+  "image": "lloesche/valheim-server",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"SERVER_NAME\",\"value\":\"dck Valheim\"},{\"key\":\"WORLD_NAME\",\"value\":\"Dedicated\"},{\"key\":\"SERVER_PASS\",\"value\":\"secret123\"}]",
+  "ports": "2456:2456/udp,2457:2457/udp,2458:2458/udp",
+  "volumes": "valheim_data:/home/steam/.config/unity3d/IronGate/Valheim",
+  "memory": "2g",
+  "cpus": "2.0",
+  "restart": "always"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "palworld-server",
+  "category": "games",
+  "description": "Palworld dedicated server with persistent save",
+  "image": "thijsvanloef/palworld-server-docker",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"SERVER_NAME\",\"value\":\"dck Palworld\"},{\"key\":\"SERVER_DESCRIPTION\",\"value\":\"Palworld server powered by dck\"},{\"key\":\"ADMIN_PASSWORD\",\"value\":\"admin123\"},{\"key\":\"SERVER_PASSWORD\",\"value\":\"\"},{\"key\":\"MAX_PLAYERS\",\"value\":\"16\"}]",
+  "ports": "8211:8211/udp,27015:27015/udp",
+  "volumes": "palworld_data:/palworld",
+  "memory": "4g",
+  "cpus": "4.0",
+  "restart": "always"
+}

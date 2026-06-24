@@ -1,0 +1,14 @@
+{
+  "name": "node-app",
+  "category": "web",
+  "description": "Node.js application with persistent code directory",
+  "image": "node",
+  "tag": "22-alpine",
+  "command": "node /app/index.js",
+  "env": "[{\"key\":\"NODE_ENV\",\"value\":\"production\"},{\"key\":\"PORT\",\"value\":\"3000\"}]",
+  "ports": "3000:3000/tcp",
+  "volumes": "node_app:/app",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "unless-stopped"
+}

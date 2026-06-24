@@ -1,0 +1,14 @@
+{
+  "name": "adguard-home",
+  "category": "network",
+  "description": "AdGuard Home — network-wide DNS filtering for ads and trackers",
+  "image": "adguard/adguardhome",
+  "tag": "latest",
+  "command": "",
+  "env": "[]",
+  "ports": "53:53/udp,53:53/tcp,8080:80/tcp,3000:3000/tcp",
+  "volumes": "adguard_work:/opt/adguardhome/work,adguard_conf:/opt/adguardhome/conf",
+  "memory": "256m",
+  "cpus": "0.5",
+  "restart": "always"
+}

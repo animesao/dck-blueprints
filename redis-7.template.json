@@ -1,0 +1,14 @@
+{
+  "name": "redis-7",
+  "category": "databases",
+  "description": "Redis 7 in-memory cache with persistence",
+  "image": "redis",
+  "tag": "7-alpine",
+  "command": "",
+  "env": "[{\"key\":\"REDIS_PASSWORD\",\"value\":\"cache123\"}]",
+  "ports": "6379:6379/tcp",
+  "volumes": "redis_data:/data",
+  "memory": "256m",
+  "cpus": "0.5",
+  "restart": "always"
+}

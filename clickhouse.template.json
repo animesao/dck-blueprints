@@ -1,0 +1,14 @@
+{
+  "name": "clickhouse",
+  "category": "databases",
+  "description": "ClickHouse — column-oriented analytics database",
+  "image": "clickhouse/clickhouse-server",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"CLICKHOUSE_DB\",\"value\":\"default\"},{\"key\":\"CLICKHOUSE_USER\",\"value\":\"admin\"},{\"key\":\"CLICKHOUSE_PASSWORD\",\"value\":\"root123\"},{\"key\":\"CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT\",\"value\":\"1\"}]",
+  "ports": "8123:8123/tcp,9000:9000/tcp",
+  "volumes": "clickhouse_data:/var/lib/clickhouse",
+  "memory": "1g",
+  "cpus": "1.0",
+  "restart": "always"
+}

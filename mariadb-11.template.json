@@ -1,0 +1,14 @@
+{
+  "name": "mariadb-11",
+  "category": "databases",
+  "description": "MariaDB 11 with persistent storage",
+  "image": "mariadb",
+  "tag": "11",
+  "command": "",
+  "env": "[{\"key\":\"MARIADB_ROOT_PASSWORD\",\"value\":\"root123\"},{\"key\":\"MARIADB_DATABASE\",\"value\":\"myapp\"},{\"key\":\"MARIADB_USER\",\"value\":\"user\"},{\"key\":\"MARIADB_PASSWORD\",\"value\":\"pass456\"}]",
+  "ports": "3307:3306/tcp",
+  "volumes": "mariadb_data:/var/lib/mysql",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}

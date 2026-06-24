@@ -1,0 +1,14 @@
+{
+  "name": "rust-server",
+  "category": "games",
+  "description": "Rust dedicated server via SteamCMD with persistent data",
+  "image": "didstopia/rust-server",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"RUST_SERVER_NAME\",\"value\":\"dck Rust Server\"},{\"key\":\"RUST_SERVER_MAX_PLAYERS\",\"value\":\"50\"},{\"key\":\"RUST_SERVER_SEED\",\"value\":\"12345\"},{\"key\":\"RUST_SERVER_WORLDSIZE\",\"value\":\"3000\"},{\"key\":\"RUST_RCON_PASSWORD\",\"value\":\"rcon123\"},{\"key\":\"RUST_UPDATE_CHECKING\",\"value\":\"1\"}]",
+  "ports": "28015:28015/udp,28016:28016/tcp",
+  "volumes": "rust_data:/steamcmd/rust",
+  "memory": "4g",
+  "cpus": "4.0",
+  "restart": "always"
+}

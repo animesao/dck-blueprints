@@ -1,0 +1,14 @@
+{
+  "name": "jellyfin",
+  "category": "media",
+  "description": "Jellyfin — free and open-source media streaming server",
+  "image": "jellyfin/jellyfin",
+  "tag": "latest",
+  "command": "",
+  "env": "[]",
+  "ports": "8096:8096/tcp",
+  "volumes": "jellyfin_config:/config,jellyfin_cache:/cache,jellyfin_media:/media",
+  "memory": "1g",
+  "cpus": "1.0",
+  "restart": "always"
+}

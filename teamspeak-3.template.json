@@ -1,0 +1,14 @@
+{
+  "name": "teamspeak-3",
+  "category": "voice",
+  "description": "TeamSpeak 3 voice server with persistent data",
+  "image": "teamspeak",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"TS3SERVER_LICENSE\",\"value\":\"accept\"},{\"key\":\"TS3SERVER_QUERY_PORT\",\"value\":\"10011\"},{\"key\":\"TS3SERVER_FILE_TRANSFER_PORT\",\"value\":\"30033\"}]",
+  "ports": "9987:9987/udp,10011:10011/tcp,30033:30033/tcp",
+  "volumes": "teamspeak_data:/var/ts3server",
+  "memory": "256m",
+  "cpus": "0.5",
+  "restart": "always"
+}

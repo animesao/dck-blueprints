@@ -1,0 +1,14 @@
+{
+  "name": "filebrowser",
+  "category": "web",
+  "description": "FileBrowser — web-based file manager with authentication",
+  "image": "filebrowser/filebrowser",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"FB_BASEURL\",\"value\":\"/\"}]",
+  "ports": "8080:80/tcp",
+  "volumes": "filebrowser_data:/database,filebrowser_files:/srv",
+  "memory": "128m",
+  "cpus": "0.5",
+  "restart": "always"
+}

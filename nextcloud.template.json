@@ -1,0 +1,14 @@
+{
+  "name": "nextcloud",
+  "category": "storage",
+  "description": "Nextcloud — self-hosted cloud storage and collaboration platform",
+  "image": "nextcloud",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"NEXTCLOUD_ADMIN_USER\",\"value\":\"admin\"},{\"key\":\"NEXTCLOUD_ADMIN_PASSWORD\",\"value\":\"cloud123\"},{\"key\":\"SQLITE_DATABASE\",\"value\":\"nextcloud\"}]",
+  "ports": "8080:80/tcp",
+  "volumes": "nextcloud_data:/var/www/html",
+  "memory": "1g",
+  "cpus": "1.0",
+  "restart": "always"
+}

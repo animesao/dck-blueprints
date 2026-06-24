@@ -1,0 +1,14 @@
+{
+  "name": "wordpress",
+  "category": "web",
+  "description": "WordPress with persistent content and plugin data",
+  "image": "wordpress",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"WORDPRESS_DB_HOST\",\"value\":\"db:3306\"},{\"key\":\"WORDPRESS_DB_USER\",\"value\":\"wordpress\"},{\"key\":\"WORDPRESS_DB_PASSWORD\",\"value\":\"wp_pass123\"},{\"key\":\"WORDPRESS_DB_NAME\",\"value\":\"wordpress\"},{\"key\":\"WORDPRESS_TABLE_PREFIX\",\"value\":\"wp_\"}]",
+  "ports": "8080:80/tcp",
+  "volumes": "wordpress_data:/var/www/html",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}

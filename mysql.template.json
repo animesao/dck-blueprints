@@ -1,0 +1,14 @@
+{
+  "name": "mysql-8",
+  "category": "databases",
+  "description": "MySQL 8 with persistent storage",
+  "image": "mysql",
+  "tag": "8",
+  "command": "",
+  "env": "[{\"key\":\"MYSQL_ROOT_PASSWORD\",\"value\":\"root123\"},{\"key\":\"MYSQL_DATABASE\",\"value\":\"myapp\"},{\"key\":\"MYSQL_USER\",\"value\":\"user\"},{\"key\":\"MYSQL_PASSWORD\",\"value\":\"pass456\"}]",
+  "ports": "3306:3306/tcp",
+  "volumes": "mysql_data:/var/lib/mysql",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}

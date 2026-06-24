@@ -1,0 +1,14 @@
+{
+  "name": "caddy",
+  "category": "web",
+  "description": "Caddy web server with auto-HTTPS, custom config and static files",
+  "image": "caddy",
+  "tag": "alpine",
+  "command": "",
+  "env": "[{\"key\":\"CADDY_PORT\",\"value\":\"80\"}]",
+  "ports": "80:80/tcp,443:443/tcp",
+  "volumes": "caddy_data:/data,caddy_config:/config,caddy_site:/srv",
+  "memory": "128m",
+  "cpus": "0.5",
+  "restart": "always"
+}

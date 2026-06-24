@@ -1,0 +1,14 @@
+{
+  "name": "ghost",
+  "category": "web",
+  "description": "Ghost blogging platform with persistent content",
+  "image": "ghost",
+  "tag": "latest",
+  "command": "",
+  "env": "[{\"key\":\"url\",\"value\":\"http://localhost:2368\"},{\"key\":\"NODE_ENV\",\"value\":\"production\"},{\"key\":\"database__client\",\"value\":\"sqlite3\"},{\"key\":\"database__connection__filename\",\"value\":\"content/data/ghost.db\"}]",
+  "ports": "2368:2368/tcp",
+  "volumes": "ghost_data:/var/lib/ghost/content",
+  "memory": "512m",
+  "cpus": "1.0",
+  "restart": "always"
+}
