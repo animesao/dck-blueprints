@@ -87,8 +87,8 @@
       "image": "mongo:7",
       "file": "mongodb-7.template.json"
     },
-    "mysql-8": {
-      "name": "mysql-8",
+    "mysql": {
+      "name": "mysql",
       "category": "databases",
       "description": "MySQL 8 with persistent storage",
       "image": "mysql:8",
