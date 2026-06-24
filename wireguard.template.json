@@ -5,6 +5,7 @@
   "image": "weejewel/wg-easy",
   "tag": "latest",
   "command": "node /app/server.js",
+  "network": "host",
   "cap_add": "NET_ADMIN,SYS_MODULE",
   "env": "[{\"key\":\"WG_HOST\",\"value\":\"vpn.example.com\"},{\"key\":\"PASSWORD\",\"value\":\"vpn_admin123\"},{\"key\":\"WG_PORT\",\"value\":\"51820\"},{\"key\":\"WG_DEFAULT_ADDRESS\",\"value\":\"10.8.0.x\"},{\"key\":\"WG_DEFAULT_DNS\",\"value\":\"1.1.1.1\"},{\"key\":\"WG_ALLOWED_IPS\",\"value\":\"0.0.0.0/0\"}]",
   "ports": "51820:51820/udp,51821:51821/tcp",
